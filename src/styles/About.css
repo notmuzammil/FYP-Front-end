@@ -1,0 +1,243 @@
+.about {
+  padding-top: 80px;
+}
+
+.about-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(10, 25, 47, 0.9), rgba(0, 245, 255, 0.1));
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.about-hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-title {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight {
+  color: var(--primary);
+  -webkit-text-fill-color: var(--primary);
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: var(--light);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.mission {
+  padding: 6rem 2rem;
+  background: rgba(10, 25, 47, 0.5);
+  position: relative;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 1.25rem;
+  color: var(--light);
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: rgba(10, 25, 47, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 245, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 245, 255, 0.1);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.team {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+}
+
+.team-member {
+  background: rgba(10, 25, 47, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 245, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition-normal);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 245, 255, 0.1);
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0.1;
+}
+
+.member-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--light);
+  margin: 0 0 0.5rem;
+}
+
+.member-role {
+  color: var(--primary);
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+
+.member-bio {
+  color: var(--light);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.values {
+  padding: 6rem 2rem;
+  background: rgba(10, 25, 47, 0.5);
+  position: relative;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+}
+
+.value-card {
+  background: rgba(10, 25, 47, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 245, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition-normal);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 245, 255, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.value-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--light);
+  margin: 0 0 1rem;
+}
+
+.value-description {
+  color: var(--light);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .mission-text {
+    font-size: 1.1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .team-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+} 
